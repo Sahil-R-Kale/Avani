@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(img/green-texture.jpg);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 60%; /* Make the container take up most of the page width */
+    width: 100%;
+    margin: 20px auto; /* Center the container */
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Horizontally centers the items */
+    gap: 20px; /* Adjust the gap between the logo and the heading */
+    margin-bottom: 40px;
+}
+
+.header img {
+    max-width: 100px; /* Adjust size as needed */
+}
+
+.header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.container input[type="text"],
+.container input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.response {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e2e3e5;
+    color: #333;
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+}
+
+#farmerDataTable {
+    width: auto; /* Adjust the width to your preference */
+    border-collapse: collapse;
+    table-layout: auto;
+    margin: 20px auto; /* Center the table horizontally */
+}
+
+#farmerDataTable th,
+#farmerDataTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#farmerDataTable td:first-child {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.green-text {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
+
+.yellow-text {
+    color: #bc8827;
+}
+
+
+
+.section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#insightsList {
+    list-style-type: disc; /* Keeps the bullet points */
+    padding-left: 20px; /* Indents the list */
+    margin-top: 20px; /* Adds space above the list */
+}
+
+#insightsList li {
+    margin-bottom: 10px; /* Adds space between items */
+    font-size: 18px; /* Increases font size for better readability */
+    font-weight: bold; /* Makes the text bold */
+    line-height: 1.6; /* Increases line height for better readability */
+    color: #333; /* Sets a dark color for text */
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo.png" alt="Avani Logo">
+            <h1>Avani</h1>
+        </div>
+        <h2>Add farmer data</h2>
+        <form id="farmerForm">
+            <input type="text" name="farmer_name" placeholder="Farmer Name" required>
+            <input type="text" name="timestamp" placeholder="Timestamp" required>
+            <input type="file" name="audio" accept="audio/*" required>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="response" id="response"></div>
+    </div>
+
+    <div class="container section">
+        <h2>View farmer data</h2>
+        <form id="viewFarmerDataForm">
+            <input type="text" name="farmer_name_view" placeholder="Farmer Name" required>
+            <input type="submit" value="View Data">
+        </form>
+        <div class="response" id="viewResponse">
+            <table id="farmerDataTable"></table>
+        </div>
+    </div>
+
+    <div class="container section">
+        <h2>Get Insights</h2>
+        <form id="insightsForm">
+            <label>
+                <input type="checkbox" name="analysis_type" value="Univariate Analysis" checked required>
+                Univariate Analysis
+            </label>
+            <label>
+                <input type="checkbox" name="analysis_type" value="Bivariate Analysis" required>
+                Bivariate Analysis
+            </label>
+            <div class="buttons">
+                <button type="button" id="textualInsights">Textual Insights</button>
+                <button type="button" id="graphicalInsights">Graphical Insights</button>
+            </div>
+        </form>
+        <div class="response" id="insightsResponse">
+            <ul id="insightsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
