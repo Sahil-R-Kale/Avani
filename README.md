@@ -3,9 +3,14 @@ An automated tool to segment, transcribe, translate, and process audio responses
 
 ## Steps to run
 
-1. Clone the repo
+1. Clone the repository on your local system
+
+2. Install the backend dependencies using pip
+   ```
+   pip install -r /backend/requirements.txt
+   ```
    
-2. Add the following details to the backend
+4. Add the following details to the backend code
    
    * In utilities/db_utils.py, add your SQL database details. For instance:
      
@@ -28,13 +33,13 @@ An automated tool to segment, transcribe, translate, and process audio responses
    process_audio(audio) # Link to your AI Model functions
    ```
 
-3. Host the backend on any server and generate a URL
+5. Host the backend on any server and generate a URL
 
-4. Replace the backend URL in the script.js file in the frontend folder, for instance
+6. Replace the backend URL in the script.js file in the frontend folder, for instance
    ```
    fetch('BACKEND_URL/process_audio', { // Replace with your actual API URL
             method: 'POST',
             body: formData,
    })
    ```
-5. The website is ready to be hosted and used
+7. The website is ready to be hosted and used
