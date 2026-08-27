@@ -7,12 +7,12 @@ An automated tool to segment, transcribe, translate, and process audio responses
 
 2. Install the backend dependencies using pip
    ```
-   pip install -r /backend/requirements.txt
+   pip install -r backend/requirements.txt
    ```
    
 4. Add the following details to the backend code
    
-   * In utilities/db_utils.py, add your SQL database details. For instance:
+   * In utilities/db_util.py, add your SQL database details. For instance:
      
    ```
    connection = pymysql.connect(
