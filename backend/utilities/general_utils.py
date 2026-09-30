@@ -31,7 +31,6 @@ def add_bivariate_text(data):
 def add_univariate_text(data):
     data += ["100.00% of farmers have planted onion",
     "Average area of onion planted: 5.79 acres",
-    "Average area of onion planted: 5.79 acres",
     "Minimum area of onion planted: 2.50 acres",
     "Maximum area of onion planted: 10.00 acres",
     "62.50% of farmers have carried out a soil test in the last 5 years",
