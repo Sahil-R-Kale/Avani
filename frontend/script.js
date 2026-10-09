@@ -49,15 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     cell1.style.fontWeight = 'bold'; // Make the first column bold
                     cell2.textContent = farmerData[key];
 
-                    if (farmerData[key].toLowerCase().includes('yes')) {
+                    const valueText = String(farmerData[key]).toLowerCase();
+                    if (valueText.includes('yes')) {
                         cell2.classList.add('green-text');
-                    } else if (farmerData[key].toLowerCase().includes('no')) {
+                    } else if (valueText.includes('no')) {
                         cell2.classList.add('red-text');
                     }
-                    else if (farmerData[key].toLowerCase().includes('problem')) {
+                    else if (valueText.includes('problem')) {
                         cell2.classList.add('red-text');
                     }
-                    else if (farmerData[key].toLowerCase().includes('manageable')) {
+                    else if (valueText.includes('manageable')) {
                         cell2.classList.add('yellow-text');
                     }
                 }
